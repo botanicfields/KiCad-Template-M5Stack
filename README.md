@@ -1,2 +1,2 @@
-# PCB-Template-M5Stack
-PCB Template of M5Stack Modules and Bases on KiCad with Footprints
+# KiCad-Template-M5Stack
+a PCB Template of Modules and Bases of M5Stack with Footprints for KiCad.
