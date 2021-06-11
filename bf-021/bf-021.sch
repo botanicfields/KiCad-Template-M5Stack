@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "BF-021"
-Date "2021-06-10"
+Date "2021-06-12"
 Rev "V01L01"
 Comp "Copyright 2021 BotanicFields, Inc."
 Comment1 "Template of M5Stack Module "
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x15_Odd_Even J1
-U 1 1 5CD75190
-P 8500 1750
-F 0 "J1" H 8550 2667 50  0000 C CNN
-F 1 "M-BUS" H 8550 2576 50  0000 C CNN
-F 2 "bf:BF@M5Stack_MBUS" H 8500 1750 50  0001 C CNN
-F 3 "~" H 8500 1750 50  0001 C CNN
-	1    8500 1750
-	1    0    0    -1  
-$EndComp
 Text Label 8300 1350 2    50   ~ 0
 GPIO23
 Text Label 8300 1450 2    50   ~ 0
@@ -143,15 +132,9 @@ F 3 "~" H 10000 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8800 2350 9250 2350
-Wire Wire Line
-	7750 1050 8300 1050
-Wire Wire Line
-	8300 1150 7750 1150
 Connection ~ 7750 1150
 Wire Wire Line
 	7750 1150 7750 1050
-Wire Wire Line
-	8300 1250 7750 1250
 Connection ~ 7750 1250
 Wire Wire Line
 	7750 1250 7750 1150
@@ -201,14 +184,8 @@ $EndComp
 Wire Wire Line
 	7750 2200 7750 2250
 Wire Wire Line
-	7750 2250 8300 2250
-Wire Wire Line
-	8300 2450 7750 2450
-Wire Wire Line
 	7750 2450 7750 2350
 Connection ~ 7750 2250
-Wire Wire Line
-	8300 2350 7750 2350
 Connection ~ 7750 2350
 Wire Wire Line
 	7750 2350 7750 2250
@@ -329,4 +306,27 @@ Wire Wire Line
 	9250 1550 8800 1550
 Connection ~ 9250 2350
 Connection ~ 9750 2450
+Wire Wire Line
+	8300 1250 7750 1250
+Wire Wire Line
+	8300 1150 7750 1150
+Wire Wire Line
+	8300 2450 7750 2450
+Wire Wire Line
+	8300 2350 7750 2350
+Wire Wire Line
+	7750 2250 8300 2250
+Wire Wire Line
+	7750 1050 8300 1050
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J1
+U 1 1 5CD75190
+P 8600 1750
+F 0 "J1" H 8650 2667 50  0000 C CNN
+F 1 "M-BUS" H 8650 2576 50  0000 C CNN
+F 2 "bf:BF@M5Stack_MBUS" H 8600 1750 50  0001 C CNN
+F 3 "~" H 8600 1750 50  0001 C CNN
+	1    8600 1750
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
